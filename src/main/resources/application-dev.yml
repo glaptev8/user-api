@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  r2dbc:
+    url: r2dbc:pool:postgres://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  flyway:
+    url: jdbc:postgresql://localhost:5432/postgres
+    user: postgres
+    password: postgres
+  profiles:
+    active: dev
+
+server:
+  port: 8082
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
