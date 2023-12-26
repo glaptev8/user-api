@@ -9,4 +9,6 @@ import reactor.core.publisher.Mono;
 
 public interface WalletRepository extends R2dbcRepository<Wallet, Long> {
   Mono<Wallet> findByWalletUid(UUID uuid);
+
+  Mono<Boolean> existsByWalletUid(UUID uuid);
 }
