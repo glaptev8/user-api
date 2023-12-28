@@ -2,13 +2,12 @@ package org.userapi.entity;
 
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Column;
-import org.springframework.data.relational.core.mapping.Table;
-import org.userapi.dto.Currency;
-import org.userapi.dto.TransactionState;
-import org.userapi.dto.TransactionType;
 
+import org.leantech.common.dto.TransactionState;
+import org.leantech.common.dto.TransactionType;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
+import org.leantech.common.dto.Currency;
 import java.time.LocalDateTime;
 import java.util.UUID;
 

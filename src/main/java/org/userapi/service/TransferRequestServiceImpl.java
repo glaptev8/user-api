@@ -16,10 +16,10 @@ import org.userapi.service.api.TransferRequestService;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
 
-import static org.userapi.dto.TransactionState.TRANSFER_IN;
-import static org.userapi.dto.TransactionState.TRANSFER_OUT;
-import static org.userapi.dto.TransactionType.COMPLETED;
-import static org.userapi.dto.TransactionType.CREATED;
+import static org.leantech.common.dto.TransactionState.TRANSFER_IN;
+import static org.leantech.common.dto.TransactionState.TRANSFER_OUT;
+import static org.leantech.common.dto.TransactionType.COMPLETED;
+import static org.leantech.common.dto.TransactionType.CREATED;
 
 @Service
 @RequiredArgsConstructor

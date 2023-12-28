@@ -2,6 +2,8 @@ package org.userapi.controller;
 
 import java.util.UUID;
 
+import org.leantech.common.dto.TransferRequestDto;
+import org.leantech.common.dto.TransferResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.userapi.Mapper;
-import org.userapi.dto.TransferRequestDto;
-import org.userapi.dto.TransferResponseDto;
 import org.userapi.service.api.TransferRequestService;
 
 import lombok.RequiredArgsConstructor;

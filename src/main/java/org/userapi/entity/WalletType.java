@@ -2,12 +2,11 @@ package org.userapi.entity;
 
 import java.time.LocalDateTime;
 
+import org.leantech.common.dto.Currency;
+import org.leantech.common.dto.ProfileType;
+import org.leantech.common.dto.WalletTypeStatus;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
-import org.userapi.dto.Currency;
-import org.userapi.dto.ProfileType;
-import org.userapi.dto.WalletStatus;
-import org.userapi.dto.WalletTypeStatus;
 
 import lombok.Data;
 

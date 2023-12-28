@@ -1,9 +1,10 @@
 package org.userapi.entity;
 
 import lombok.Data;
+
+import org.leantech.common.dto.WalletTypeStatus;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
-import org.userapi.dto.WalletTypeStatus;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

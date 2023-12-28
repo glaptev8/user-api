@@ -4,10 +4,29 @@ services:
   postgres:
     image: postgres
     volumes:
-      - ./data/db:/var/lib/postgresql/data
+      - ./data2/db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=dbName -d user_api
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
       - 5432:5432
+  user-api:
+    image: "glaptev8/user-api:v0.0"
+    environment:
+      SPRING_DATASOURCE_URL: "r2dbc:pool:postgres://postgres:5432/user_api"
+      FLYWAY_DATASOURCE_URL: "jdbc:postgresql://postgres:5432/user_api"
+      SPRING_DATASOURCE_USERNAME: "postgres"
+      SPRING_DATASOURCE_PASSWORD: "postgres"
+    ports:
+      - "8084:8082"
+    depends_on:
+      - postgres
+#  nexus:
+#    image: sonatype/nexus3
+#    container_name: nexus
+#    ports:
+#      - "8083:8081"
+#    volumes:
+#      - ./nexus-data:/nexus-data
+#    restart: always

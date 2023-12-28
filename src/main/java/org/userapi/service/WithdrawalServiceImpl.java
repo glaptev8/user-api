@@ -3,9 +3,9 @@ package org.userapi.service;
 import java.math.BigDecimal;
 import java.util.UUID;
 
+import org.leantech.common.dto.TransactionType;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.reactive.TransactionalOperator;
-import org.userapi.dto.TransactionType;
 import org.userapi.dto.WithdrawalSaveDto;
 import org.userapi.entity.Transaction;
 import org.userapi.repository.PaymentRequestRepository;
@@ -18,8 +18,8 @@ import org.userapi.service.api.WithdrawalService;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
 
-import static org.userapi.dto.TransactionState.WITHDRAWAL;
-import static org.userapi.dto.TransactionType.CREATED;
+import static org.leantech.common.dto.TransactionState.WITHDRAWAL;
+import static org.leantech.common.dto.TransactionType.CREATED;
 
 @Service
 @RequiredArgsConstructor

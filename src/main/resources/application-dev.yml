@@ -4,18 +4,17 @@ spring:
       ddl-auto: create
     show-sql: true
   r2dbc:
-    url: r2dbc:pool:postgres://localhost:5432/postgres
+    url: r2dbc:pool:postgres://localhost:5432/user_api
     username: postgres
     password: postgres
   flyway:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/user_api
     user: postgres
     password: postgres
-  profiles:
-    active: dev
+
 
 server:
-  port: 8082
+  port: 8083
 
 logging:
   level:

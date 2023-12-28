@@ -2,6 +2,8 @@ package org.userapi.controller;
 
 import java.util.UUID;
 
+import org.leantech.common.dto.WithdrawalRequestDto;
+import org.leantech.common.dto.WithdrawalResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.userapi.Mapper;
-import org.userapi.dto.WithdrawalRequestDto;
-import org.userapi.dto.WithdrawalResponseDto;
 import org.userapi.service.api.WithdrawalService;
 
 import lombok.RequiredArgsConstructor;

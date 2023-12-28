@@ -1,8 +1,8 @@
 package org.userapi.entity;
 
+import org.leantech.common.dto.CryptoWalletStatus;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
-import org.userapi.dto.CryptoWalletStatus;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

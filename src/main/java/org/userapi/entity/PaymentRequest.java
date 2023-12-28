@@ -2,9 +2,10 @@ package org.userapi.entity;
 
 import lombok.Builder;
 import lombok.Data;
+
+import org.leantech.common.dto.PaymentRequestStatus;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
-import org.userapi.dto.PaymentRequestStatus;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
