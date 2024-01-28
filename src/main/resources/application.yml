@@ -12,9 +12,6 @@ spring:
     user: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
 
-server:
-  port: 8082
-
 logging:
   level:
     org:
